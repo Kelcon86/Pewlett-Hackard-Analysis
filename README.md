@@ -6,9 +6,6 @@ Pewlett-Hackard is a reputable company with thousands of employees. Along with a
 ## Results: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
 For deliverable 1 we were tasked with finding the number of retiring employees by job title. The Retirement_titles table below was created 
 
-create a Retirement Titles table that holds all the titles of employees who were born between January 1, 1952 and December 31, 1955. Because some employees may have multiple titles in the database—for example, due to promotions—you’ll need to use the DISTINCT ON statement to create a table that contains the most recent title of each employee. Then, use the COUNT() function to create a table that has the number of retirement-age employees by most recent job title. Finally, because we want to include only current employees in our analysis, be sure to exclude those employees who have already left the company.
-
-
 - First the Retirement_titles table was created by retrieving the emp_no, first_name and last_name columns from the Employees table and the title, from_date and to_date columns from the Titles table. The INTO clause was used to create the new table and both tables were joined on the primary key. The data was filtered on the birth_date column to retrieve the employees who were born between 1952 and 1955. Lastly, the table was ordered by the employee number.
  
 <img width="665" alt="Retirement_titles" src="https://user-images.githubusercontent.com/60076980/153772319-6dde9948-c39b-4ae7-b2f8-5f1d73f38aca.png">
@@ -21,11 +18,9 @@ create a Retirement Titles table that holds all the titles of employees who were
 
 <img width="200" alt="Retiring_titles" src="https://user-images.githubusercontent.com/60076980/153772515-fccacd69-85ed-4005-82c7-d7c787ee92dc.png">
 
-For deliverable 2 we were tasked with finding the employees that are eligible for the mentorship program.
+- Lastly we created a Mentorship_eligibility table. For deliverable 2 we were tasked with finding the employees that are eligible for the mentorship program (employees born between January 1, 1965 and December 31, 1965). In order to do this we first retrieved the emp_no, first_name, last_name and birth_date columns from the Employees table, the from_date and to_date columns from the Departments Employee table and the title column from the Titles table. Then we used the DISTINCT ON statement to retrieve the first occurrence of the employee number for each set of rows defined by the ON () clause. The new table was created using the INTO clause. We then joined the Employees and Department Employee table on the primary key and the Employees and Titles tables on the primary key. The data was filtered on the to_date column to all the current employees, then filtered on the birth_date columns to get all the employees whose birth dates were between January 1, 1965 and December 31, 1965. The table was ordered by the employee number.
 
-- Mentorship_eligibility
 <img width="660" alt="Mentorship_eligibility" src="https://user-images.githubusercontent.com/60076980/153772378-077afb7f-a1ca-41de-a7be-7e04f0e4300d.png">
-
 
 ## Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
