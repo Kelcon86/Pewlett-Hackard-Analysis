@@ -14,13 +14,18 @@ Pewlett-Hackard is a reputable company with thousands of employees. Along with a
 
 - The third table created was Retiring_titles in order to retrieve the number of employees by their most recent job title who are about to retire. We first retrieved the number of titles from the Unique_titles table and then grouped the table by title and sorted the count column in descending order.
 
-<img width="200" alt="Retiring_titles" src="https://user-images.githubusercontent.com/60076980/153772515-fccacd69-85ed-4005-82c7-d7c787ee92dc.png">
+<img width="492" alt="Retirement_titles" src="https://user-images.githubusercontent.com/60076980/153776213-ac51f058-9ec4-4c6d-b0b8-50e93b8199cf.png">
 
 - Lastly we created a Mentorship_eligibility table. For deliverable 2 we were tasked with finding the employees that are eligible for the mentorship program (employees born between January 1, 1965 and December 31, 1965). In order to do this we first retrieved the emp_no, first_name, last_name and birth_date columns from the Employees table, the from_date and to_date columns from the Departments Employee table and the title column from the Titles table. Then we used the DISTINCT ON statement to retrieve the first occurrence of the employee number for each set of rows defined by the ON () clause. The new table was created using the INTO clause. We then joined the Employees and Department Employee table on the primary key and the Employees and Titles tables on the primary key. The data was filtered on the to_date column to all the current employees, then filtered on the birth_date columns to get all the employees whose birth dates were between January 1, 1965 and December 31, 1965. The table was ordered by the employee number.
 
 <img width="660" alt="Mentorship_eligibility" src="https://user-images.githubusercontent.com/60076980/153772378-077afb7f-a1ca-41de-a7be-7e04f0e4300d.png">
 
-## Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
+## Summary
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+There are 1549 employees eligible for the mentorship program. 
+
+<img width="466" alt="Mentorship_eligibility_count" src="https://user-images.githubusercontent.com/60076980/153775998-e2755a24-9551-42cb-8350-8fe694f34334.png">
+
