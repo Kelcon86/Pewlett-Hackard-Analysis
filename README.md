@@ -39,5 +39,5 @@ There are 1549 employees eligible for the mentorship program. Considering the si
 
 <img width="466" alt="Mentorship_eligibility_count" src="https://user-images.githubusercontent.com/60076980/153775998-e2755a24-9551-42cb-8350-8fe694f34334.png">
 
-By getting a count of the titles in the mentorship_eligibility table we can see the viable mentorship candidates.
+By getting a count of the titles in the mentorship_eligibility table we can see which role the viable mentorship candidates are in.
 <img width="294" alt="Mentorship_eligibility_titles" src="https://user-images.githubusercontent.com/60076980/153777473-19bab9e8-4b73-442c-b51a-ed5c9e4b0797.png">
