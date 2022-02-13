@@ -3,7 +3,7 @@
 ## Overview
 Pewlett-Hackard is a reputable company with thousands of employees. Along with an HR analyst, I have been tasked with analyzing 6 CSV files with employee information in order to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. 
 
-## Results: Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+## Results
 - For deliverable 1 we were tasked with finding the number of retiring employees by job title. The Retirement_titles table was created by retrieving the emp_no, first_name and last_name columns from the Employees table and the title, from_date and to_date columns from the Titles table. The INTO clause was used to create the new table and both tables were joined on the primary key. The data was filtered on the birth_date column to retrieve the employees who were born between 1952 and 1955. Lastly, the table was ordered by the employee number.
  
 <img width="665" alt="Retirement_titles" src="https://user-images.githubusercontent.com/60076980/153772319-6dde9948-c39b-4ae7-b2f8-5f1d73f38aca.png">
