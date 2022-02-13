@@ -21,11 +21,23 @@ Pewlett-Hackard is a reputable company with thousands of employees. Along with a
 <img width="660" alt="Mentorship_eligibility" src="https://user-images.githubusercontent.com/60076980/153772378-077afb7f-a1ca-41de-a7be-7e04f0e4300d.png">
 
 ## Summary
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+From the Retirement_titles table we can see the breakdown of roles that have employees retiring soon:
+- 25,916 Senior Engineers
+- 24,926 Senior Staff
+- 9,285 Engineers
+- 7,636 Staff
+- 3,603 Technique Leaders
+- 1,090 Assistant Engineers
+- 2 Managers
 
-There are 1549 employees eligible for the mentorship program. 
+We can see that 50,842 of the 72,458 (70%) retiring employees are in senior roles and that 36,291 of the 72,458 (50%) retiring employees are in engineer positions.
+
+### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees?
+There are 1549 employees eligible for the mentorship program. Considering the size of the company and the number of retiring employees, this is not enough mentors.
 
 <img width="466" alt="Mentorship_eligibility_count" src="https://user-images.githubusercontent.com/60076980/153775998-e2755a24-9551-42cb-8350-8fe694f34334.png">
 
+By getting a count of the titles in the mentorship_eligibility table we can see the viable mentorship candidates.
+<img width="294" alt="Mentorship_eligibility_titles" src="https://user-images.githubusercontent.com/60076980/153777473-19bab9e8-4b73-442c-b51a-ed5c9e4b0797.png">
