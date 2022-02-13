@@ -6,7 +6,7 @@ Pewlett-Hackard is a reputable company with thousands of employees. Along with a
 ## Results
 - For deliverable 1 we were tasked with finding the number of retiring employees by job title. The Retirement_titles table was created by retrieving the emp_no, first_name and last_name columns from the Employees table and the title, from_date and to_date columns from the Titles table. The INTO clause was used to create the new table and both tables were joined on the primary key. The data was filtered on the birth_date column to retrieve the employees who were born between 1952 and 1955. Lastly, the table was ordered by the employee number.
  
-<img width="665" alt="Retirement_titles" src="https://user-images.githubusercontent.com/60076980/153772319-6dde9948-c39b-4ae7-b2f8-5f1d73f38aca.png">
+<img width="623" alt="retirement_titles_screenshot" src="https://user-images.githubusercontent.com/60076980/153776293-f191e25f-7496-448b-af63-b8eb6b2c096c.png">
 
 - The second table created was Unique_titles in order to remove the duplicate entries for employees that had switched titles over the years and to keep only the most recent title of each employee. First we retrieved the employee number, first and last name, and title columns from the Retirement Titles table. Then the DISTINCT ON statement was used to retrieve the first occurrence of the employee number for each set of rows defined by the ON () clause. We then filtered on the to_date column to exclude the employees that have already left the company and to keep only those daes that are equal to '9999-01-01'. The Unique_titles table was created by using the INTO clause and the table was sorted in ascending order by the employee number and descending order by the last date (to_date) of the most recent title.
 
